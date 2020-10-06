@@ -30,7 +30,7 @@ def write_in_file(filepath,all):
 
 def checklocal(path):
     temp=r2.findall(path)
-    if(temp is None):
+    if(temp is None or len(temp)==0):
         return True
     else:
         return False
